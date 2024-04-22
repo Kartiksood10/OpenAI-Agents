@@ -1,0 +1,10 @@
+langchain
+langchainhub
+openai
+streamlit
+yfinance
+python-dotenv
+tiktoken
+faiss-cpu
+google-search-results
+wikipedia
