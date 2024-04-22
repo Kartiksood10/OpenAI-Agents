@@ -192,13 +192,13 @@ repl_tool = Tool(
     func=search.run,
 )
 
-llm = OpenAI(temperature=0.5)
+llm = OpenAI(temperature=1)
 
-tools = [FinanceTool(), CircumferenceTool(), search_tool, wiki_tool, repl_tool, retriever_tool]
+#tools = [FinanceTool(), CircumferenceTool(), search_tool, wiki_tool, repl_tool, retriever_tool]
 
 # DEFAULT TOOLS
 
-#tools = load_tools(['wikipedia', 'serpapi','llm-math', 'dalle-image-generator', 'retriever_tool'], llm=llm)
+tools = load_tools(['wikipedia', 'serpapi','llm-math', 'dalle-image-generator', 'retriever_tool'], llm=llm)
 
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
