@@ -243,6 +243,8 @@ if user_input:
         "chat_history": st.session_state["chat_history"]
     }
 )
+    
+    # output of react agent comes in the form of 'output':
 
     st.session_state.past.append(user_input)
     st.session_state.generated.append(answer['output'])
