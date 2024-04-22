@@ -192,7 +192,7 @@ repl_tool = Tool(
     func=search.run,
 )
 
-llm = OpenAI(temperature=0.5)
+llm = OpenAI(temperature=1)
 
 #tools = [FinanceTool(), CircumferenceTool(), search_tool, wiki_tool, repl_tool, retriever_tool]
 
